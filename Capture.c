@@ -33,11 +33,11 @@ int mist(int argc){
 	}
 	for (i=5;i<argc-1;i++)
 		if (atoi(args[3]) < atoi(args[i]) || atoi(args[i]) < 1){
-			printf("\n Вы ввели вариант ответа, который отстутсвует в предложенных вариантах\n\n",atoi(args[3]),atoi(args[i]));
+			printf("Вы ввели вариант ответа, который отстутсвует в предложенных вариантах\n\n",atoi(args[3]),atoi(args[i]));
 			exit(1);
 		}
 	if (atoi(args[1]) < 3 || atoi(args[2]) < 3) {
-		printf("\n Размер ячейки должен быть больше 2-х\n\n");
+		printf("Размер ячейки должен быть больше 2-х\n\n");
 		exit(1);
 	}
 }
